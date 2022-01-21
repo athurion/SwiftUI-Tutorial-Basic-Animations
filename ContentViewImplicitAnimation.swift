@@ -21,6 +21,10 @@ struct ContentView: View {
                 .foregroundColor(heartChange ? .red : .black)
                 .scaleEffect(heartChange ? 1.5 : 1.0)
                 .animation(.default, value: heartChange)
+                //.animation(.easeIn(duration: 1), value: heartChange)
+                //.animation(.easeOut(duration: 1), value: heartChange)
+                //.animation(.easeInOut(duration: 1), value: heartChange)
+                //.animation(.spring(response: 0.2, dampingFraction: 0.2, blendDuration: 0.2), value: heartChange)
             
         } //ZStack
         .onTapGesture {
