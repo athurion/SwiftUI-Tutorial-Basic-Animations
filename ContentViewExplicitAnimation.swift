@@ -25,7 +25,19 @@ struct ContentView: View {
         .onTapGesture {
             withAnimation(.default) {
                 self.heartChange.toggle()
-            }
+             }
+//             withAnimation(.easeIn(duration: 1)) {
+//                 self.heartChange.toggle()
+//             }
+//             withAnimation(.easeOut(duration: 1)) {
+//                 self.heartChange.toggle()
+//             }
+//             withAnimation(.easeInOut(duration: 1)) {
+//                 self.heartChange.toggle()
+//             }
+//             withAnimation(.spring(response: 0.2, dampingFraction: 0.2, blendDuration: 0.2)) {
+//                 self.heartChange.toggle()
+//             }
         }
         
     } //body
